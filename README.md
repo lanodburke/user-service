@@ -32,3 +32,8 @@ The application can be accessed from ```localhost:8080```
 | `PUT` | `/api/v1/user{id}`                                 | Updated user with given `{id}`.                   |
 | `POST`   | `/api/v1/login`                             | Login user                      |
 | `POST`   | `/api/v1/logout`                             | Logout user                    |
+
+## Improvements 
+* Implement Spring-Security for authenticating user endpoints and login/logout endpoints
+* Hash passwords and store them in database
+* Add integration tests
