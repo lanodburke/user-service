@@ -1,10 +1,10 @@
 package com.genesys.userservice.repository;
 
-import com.genesys.userservice.entity.UserEntity;
-import org.springframework.data.repository.CrudRepository;
+import com.genesys.userservice.model.User;
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends CrudRepository<UserEntity, Long> {
+public interface UserRepository extends MongoRepository<User, String> {
 
 }
